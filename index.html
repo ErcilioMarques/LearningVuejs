@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 1 Vue js</title>
+
+    <!--<script src="https://unpkg.com/vue/dist/vue.js"></script>-->
+    <script src="vue.js"></script>
+
+</head>
+<body>
+
+<div id="app">
+    <button @click="mudarTitulo">muda titulo</button>
+
+    <p>
+{{ title }}
+    </p>
+
+
+    <input type="text" v-on:input="cssClass=$event.target.value">
+
+    <p>{{cssClass}}</p>
+
+    <button @click="incrementa">incremente</button>
+    <p>contador: {{ counter}}</p>
+    <p>clicks: {{clicks}}</p>
+
+</div>
+</body>
+
+<script src="methods.js"></script>
+</html>
